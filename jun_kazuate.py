@@ -34,13 +34,24 @@ import random
 
 hit = 0
 blw = 0
-num = 3
+num = 4     #2-5
 cha = 15
 print(num,"けたの数を当てるゲームです（",cha,"回勝負）")
 
 # numけたの数字を作成
 population=["0","1","2","3","4","5","6","7","8","9"]
 list = random.sample(population,num)
+
+if num == 2:
+    cha = 8
+elif num == 3:
+    cha = 12
+elif num == 4:
+    cha = 15
+elif num == 5:
+    cha = 20
+else:
+    cha = 15
 
 for i in range(1,cha+1):
     myinstance = battle(i,hit,blw)

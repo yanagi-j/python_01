@@ -18,7 +18,7 @@ while True:
     if A!=D and B!=D and C!=D:
         break
 
-print(A,B,C,D)
+#print(A,B,C,D)
 
 for i in range(15):
     input_line=input("千")
